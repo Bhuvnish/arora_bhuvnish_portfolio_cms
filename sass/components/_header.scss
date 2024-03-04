@@ -1,0 +1,142 @@
+
+ 
+
+
+
+ 
+ #main-nav ul  {
+    list-style: none;
+   text-align: center;
+ 
+   text-decoration: none;
+   background-color:rgb(78, 108, 173);
+   border-radius: 10px;
+
+  
+  
+
+ }
+
+ #main-nav  div ul li a{
+  
+    text-decoration: none;
+    text-align: end;
+    display: inline;
+    color: rgb(251, 244, 244);
+   
+    font-family: 'Prata', serif;
+    
+  
+   
+
+
+
+ }
+ #sticky-nav-con {
+  position: sticky;
+  background-color: rgb(78, 108, 173);
+  top: 0px;
+  border-bottom: solid 1px #c3c3c3;
+  z-index: 1; 
+  /* had to set z-index as css filters was causing images to overlap, see below */
+}
+ 
+
+ 
+
+
+
+
+#main-nav button {
+  width: 20px;
+  height: 20px;
+  background: url(../images/burger.svg) no-repeat center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  transition: all .5s ease;
+  border: 0;
+}
+
+#main-nav button.expanded {
+  transform: rotate(90deg);
+}
+
+#burger-con {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+#burger-con.slide-toggle {
+  display: block;
+}
+
+#main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+#main-nav ul li a:hover {
+  color: #9a2018;
+}
+
+#main-nav ul li {
+  border-bottom: 1px solid #efefef;
+}
+
+#main-nav ul li:first-child {
+  border-top: 1px solid #efefef;
+}
+
+#main-nav ul li:last-child {
+  margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 558px) {
+
+  #sticky-nav-con {
+     position: sticky;
+     background-color: rgb(78, 108, 173);
+     top: 0px;
+     border-bottom: solid 1px #c3c3c3;
+     z-index: 1; 
+     /* had to set z-index as css filters was causing images to overlap, see below */
+  }
+
+  #button {
+     display: none;
+  }
+
+ 
+
+  #burger-con {
+     display: block;
+     font-size: 12px;
+  }
+
+  #burger-con ul li, #burger-con ul li:first-child {
+     border: none;
+     display: inline;
+  }
+
+  #main-nav ul li a {
+     display: inline;
+  }
+
+  #burger-con ul li {
+     margin-right: 10px;
+  }
+
+  #burger-con ul li:last-child {
+     margin-right: 0;
+  }
+
+  
+
+}
+
+
