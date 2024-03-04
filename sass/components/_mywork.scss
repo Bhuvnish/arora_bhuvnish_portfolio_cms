@@ -1,0 +1,152 @@
+
+#mywork h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Prata', serif;
+    
+   
+    
+ }
+ .project-con  h3{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    
+    color: rgb(0, 0, 0);
+    font-family: 'Prata', serif;}
+
+
+.image {
+    position: relative;
+    
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+.img:hover{
+    opacity: 0.9;
+
+    
+}
+
+  
+.project-con img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; 
+  }
+  
+  .project-con::before {
+    content: '';
+    
+    background-color: rgba(0, 0, 0, 2); 
+    opacity: 0; 
+    transition: opacity 0.3s ease black; 
+  }
+  
+  .project-con:hover img,
+  .project-con:hover::before {
+    opacity: 0.5; 
+    transform: scale(1.02);
+  }
+
+
+
+
+
+
+.text  a {
+    color: rgb(248, 237, 237);
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color:rgb(78, 108, 173) ;
+    border-radius: 5px;
+    
+    text-align: center;
+    font-family: 'Prata', serif;
+    
+    
+
+}
+
+
+
+
+
+  
+
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+.grid-item {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.grid-item.in-view {
+    opacity: 1;
+}
+
+
+#mywork{
+    
+    height: 700px; /* Adjust the height as needed */
+    overflow-y: auto;
+    
+    margin-top: 40px;
+    
+}
+
+@media screen and (max-width: 558px){
+
+    #mywork h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        color: rgb(0, 0, 0);
+        font-family: 'Prata', serif;
+        
+       
+        
+     }
+    #mywork h3{
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 30px;
+        color: rgb(78, 108, 173);
+       
+        font-family: 'Whisper', cursive;
+    }
+    .text  a {
+        color: rgb(248, 237, 237);
+        font-size: 15px;
+        position: absolute;
+        top: 50%;
+        left: 43%;
+        text-decoration: none;
+        border: 2px solid white;
+        background-color:rgb(78, 108, 173) ;
+        border-radius: 5px;
+        
+        text-align: center;
+    }
+
+
+   
+}
+
+
+
+
